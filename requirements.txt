@@ -7,3 +7,4 @@ gunicorn
 
 xarray
 numpy
+h5netcdf
