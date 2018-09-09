@@ -1,1 +1,0 @@
-# solitonscattering-examples
