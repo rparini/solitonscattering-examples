@@ -10,7 +10,7 @@ import dash_html_components as html
 app = dash.Dash()
 server = app.server
 
-arrayFile = 'Array_xyz_01.nc'
+arrayFile = 'snapshot/Snapshot_xyz_t100_001.nc'
 
 with xr.open_dataset(arrayFile, engine='h5netcdf') as state:
     if 'x' in state.dims:
@@ -19,7 +19,6 @@ with xr.open_dataset(arrayFile, engine='h5netcdf') as state:
         u0 = state['u']
     u0 = u0.transpose('v', 'k')
 
-    data = np.array([[1, 2.1, 3], [3,4,0]])
 
     app.layout = html.Div(children=[
         html.H1(children='Snapshot'),
