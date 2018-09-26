@@ -10,5 +10,5 @@ numpy
 h5netcdf
 
 # solitonscattering
-git+git://github.com/rparini/solitonscattering@master#egg=solitonscattering
+git+git://github.com/rparini/solitonscattering@edb058e#egg=solitonscattering
 cxroots
