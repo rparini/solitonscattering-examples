@@ -11,4 +11,4 @@ h5netcdf
 
 # solitonscattering
 git+git://github.com/rparini/solitonscattering@master#egg=solitonscattering
-
+cxroots
