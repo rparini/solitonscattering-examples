@@ -54,7 +54,7 @@ graph = dcc.Graph(
                 'title':'Speed/Frequency', 
                 'range':[0,1],
             },
-            'title': "Kinematics for v0=0.95",
+            'title': "Kinematics for v0=0.875",
         },
     }
 )
