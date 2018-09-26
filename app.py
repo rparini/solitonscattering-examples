@@ -45,5 +45,8 @@ app.layout = html.Div([
 def display_content(value):
     return html.Div([graphs[value]])
 
+# Use plotly's css style sheet
+app.css.append_css({'external_url': 'https://codepen.io/chriddyp/pen/bWLwgP.css'})
+
 if __name__ == '__main__':
     app.run_server(debug=True)
