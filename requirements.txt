@@ -13,3 +13,4 @@ h5netcdf
 git+git://github.com/rparini/solitonscattering@master#egg=solitonscattering
 cxroots
 cython
+numba
