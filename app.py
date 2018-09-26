@@ -19,6 +19,19 @@ graphs = {
 app.scripts.config.serve_locally = True
 
 app.layout = html.Div([
+	html.Div([
+		html.P([
+			"These examples have been created using the ", 
+			html.A('solitonscattering', href='https://github.com/rparini/solitonscattering-examples'), 
+			" library and replicate some of the figures in the paper ",
+			html.A("Breaking integrability at the boundary: the sine-Gordon model with Robin boundary conditions", href='https://arxiv.org/abs/1509.08448'), 
+			# html.A("Breaking integrability at the boundary: the sine-Gordon model with Robin boundary conditions", href='https://doi.org/10.1088/1751-8113/49/16/165205'), 
+			# " by Robert Arthur, Patrick Dorey and Robert Parini, Journal of Physics A, Volume 49, Number 16, 2016, ",
+			# html.A('(ArXiv:1509.08448)', href='https://arxiv.org/abs/1509.08448'), 
+			".",
+		]),
+	    html.P(["The source code and data for these examples and this web app are hosted ", html.A('here', href='https://github.com/rparini/solitonscattering-examples'), '.']),
+    ]),
     html.Div(
         dcc.Tabs(children=[
         		dcc.Tab(label='Snapshot', value='snapshot'),
