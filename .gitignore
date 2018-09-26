@@ -1,5 +1,5 @@
 venv
 *.pyc
-v95Kinematics/*_field.nc
+*_field.nc
 .DS_Store
 .env
