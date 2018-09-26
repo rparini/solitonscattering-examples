@@ -59,7 +59,7 @@ app.layout = html.Div([
 	[Input('tabs', 'value')]
 )
 def display_content(value):
-    return html.Div([graphs[value]])
+    return html.Div(graphs[value])
 
 # Use plotly's css style sheet
 app.css.append_css({'external_url': 'https://codepen.io/chriddyp/pen/bWLwgP.css'})
