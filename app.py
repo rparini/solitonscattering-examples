@@ -9,9 +9,11 @@ server = app.server
 
 from snapshot.app import graph as snapshot_graph
 from v95Kinematics.app import graph as v95_graph
+from v875Kinematics.app import graph as v875_graph
 graphs = {
 	'snapshot': snapshot_graph, 
-	'v95Kinematics': v95_graph
+	'v95Kinematics': v95_graph,
+	'v875Kinematics': v875_graph,
 }
 
 app.scripts.config.serve_locally = True
@@ -21,6 +23,7 @@ app.layout = html.Div([
         dcc.Tabs(children=[
         		dcc.Tab(label='Snapshot', value='snapshot'),
         		dcc.Tab(label='Kinematics v0=0.95', value='v95Kinematics'),
+        		dcc.Tab(label='Kinematics v0=0.875', value='v875Kinematics'),
             ],
             value='snapshot',
             id='tabs',
