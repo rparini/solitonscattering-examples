@@ -49,13 +49,10 @@ graph = dcc.Graph(
         'layout': {
             'xaxis': {
                 'title':'Defect Parameter, k', 
-                'tickvals':[0,0.1,0.2,0.3,0.4,0.5],
             },
             'yaxis': {
                 'title':'Speed/Frequency', 
                 'range':[0,1],
-                'tickvals':[0,.1,.2,.3,.4,.5,.6,.7,.8,.9,1],
-                'scaleratio': 1,
             },
             'title': "Kinematics for v0=0.95",
         },
