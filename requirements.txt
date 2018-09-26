@@ -10,6 +10,5 @@ numpy
 h5netcdf
 
 # solitonscattering
-cython
 git+git://github.com/rparini/solitonscattering@master#egg=solitonscattering
 
